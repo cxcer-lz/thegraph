@@ -19,9 +19,12 @@ dataSources:
         - NFTCreated
         - NFTRegesitered
         - OwnershipTransferred
+        - TokenInfo
       abis:
         - name: NFTFactory
           file: ./abis/NFTFactory.json
+        - name: S2NFT
+          file: ./abis/S2NFT.json
       eventHandlers:
         - event: NFTCreated(address)
           handler: handleNFTCreated
